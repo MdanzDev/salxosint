@@ -28,16 +28,16 @@ def search_by_name():
     time.sleep(2)
 
     sources = [
-          f"https://pipl.com/search/?q={name}+{f_name}",
-        f"https://www.facebook.com/search/top/?q={name} {f_name}",
-        f"https://www.spokeo.com/{name}-{f_name}",
-        f"https://www.peekyou.com/{name}_{f_name}",
-        f"https://twitter.com/search?q={name} {f_name}",
+          f"https://pipl.com/search/?q={name}",
+        f"https://www.facebook.com/search/top/?q={name}",
+        f"https://www.spokeo.com/{name}",
+        f"https://www.peekyou.com/{name}",
+        f"https://twitter.com/search?q={name}",
         f"https://instagram.com/{name}",
-        f"https://www.linkedin.com/search/results/people/?keywords={name}+{f_name}",
-        f"https://www.truepeoplesearch.com/results?name={name}+{f_name}",
-        f"https://www.zabasearch.com/people/{name}+{f_name}/",
-        f"https://www.thatsthem.com/name/{name}-{f_name}"
+        f"https://www.linkedin.com/search/results/people/?keywords={name}",
+        f"https://www.truepeoplesearch.com/results?name={name}",
+        f"https://www.zabasearch.com/people/{name}/",
+        f"https://www.thatsthem.com/name/{name}"
     ]
 
     for source in sources:
@@ -50,7 +50,7 @@ def search_by_name():
 def search_by_phone():
     clear_screen()
     display_logo()
-    phone = input("\n\033[1;35mMasukkan Nombor Telefon (Dengan Kod Negara):\033[1;m ")
+    phone_number = input("\n\033[1;35mMasukkan Nombor Telefon (Dengan Kod Negara):\033[1;m ")
     print("\n\033[1;33m[INFO]\033[1;m Mengambil informasi, sila tunggu...\n")
     time.sleep(2)
 
